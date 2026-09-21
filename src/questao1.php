@@ -1,33 +1,9 @@
 <?php
 
-declare(strict_types=1);
-
-/**
- * Questão 1 - Identificação de animais
- *
- * Faz perguntas ao usuário pelo terminal (sim/nao) seguindo a árvore de
- * classificação abaixo até identificar o animal escolhido.
- *
- * Mamíferos -> Quadrúpedes -> Carnívoros  -> Leão
- *                          -> Herbívoros  -> Cavalo
- *           -> Bípedes     -> Onívoros    -> Homem
- *                          -> Frutívoros  -> Macaco
- *           -> Voadores                   -> Morcego
- *           -> Aquáticos                  -> Baleia
- * Aves      -> Não voadoras -> Tropicais  -> Avestruz
- *                           -> Polares    -> Pinguim
- *           -> Nadadoras                  -> Pato
- *           -> De rapina                  -> Águia
- * Répteis   -> Com casco                  -> Tartaruga
- *           -> Carnívoros                 -> Crocodilo
- *           -> Sem patas                  -> Cobra
- */
-
-// lê a resposta e tipa como texto
 $resposta = (string) readline("É mamífero? (sim/nao): ");
 
 if ($resposta === "sim") {
-    // ---------- MAMÍFEROS ----------
+    // ---------- MAMÍFEROS ----------//
     $resposta = (string) readline("É quadrúpede? (sim/nao): ");
 
     if ($resposta === "sim") {
@@ -94,7 +70,7 @@ if ($resposta === "sim") {
         echo "Resposta inválida. Responda com sim ou nao." . PHP_EOL;
     }
 } elseif ($resposta === "nao") {
-    // ---------- AVES ----------
+    // ---------- AVES ----------//
     $resposta = (string) readline("É ave? (sim/nao): ");
 
     if ($resposta === "sim") {
